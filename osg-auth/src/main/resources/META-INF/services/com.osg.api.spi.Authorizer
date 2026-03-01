@@ -1,0 +1,2 @@
+com.osg.auth.RbacAuthorizer
+com.osg.auth.AbacAuthorizer

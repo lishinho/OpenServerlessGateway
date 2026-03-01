@@ -1,0 +1,2 @@
+com.osg.protocol.DubboProtocolAdapter
+com.osg.protocol.GrpcProtocolAdapter

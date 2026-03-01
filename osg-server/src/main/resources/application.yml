@@ -1,0 +1,59 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: osg-gateway
+  cloud:
+    nacos:
+      discovery:
+        enabled: false
+      config:
+        enabled: false
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
+osg:
+  rate-limit:
+    enabled: true
+    default-qps: 1000
+  auth:
+    enabled: true
+    jwt-secret: osg-default-jwt-secret-key
+    jwt-expire: 86400
+  gray:
+    enabled: true
+  retry:
+    enabled: true
+    max-retries: 3
+    interval: 100
+  replay:
+    enabled: false
+    sample-rate: 0.1
+  antibrush:
+    enabled: true
+    ip-threshold: 100
+    user-threshold: 50
+  degrade:
+    enabled: true
+    error-threshold: 10
+  concurrency:
+    core-pool-size: 10
+    max-pool-size: 50
+    queue-capacity: 100
+
+logging:
+  level:
+    root: INFO
+    com.osg: DEBUG
