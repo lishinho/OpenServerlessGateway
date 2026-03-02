@@ -15,6 +15,8 @@ public enum ProtocolType {
 
     SOFA("sofa", "SOFA协议"),
 
+    SERVICECOMB("servicecomb", "ServiceComb协议"),
+
     THRIFT("thrift", "Thrift协议"),
 
     WEBSOCKET("websocket", "WebSocket协议");

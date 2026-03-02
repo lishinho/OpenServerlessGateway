@@ -1,2 +1,4 @@
 com.osg.protocol.DubboProtocolAdapter
 com.osg.protocol.GrpcProtocolAdapter
+com.osg.protocol.SofaProtocolAdapter
+com.osg.protocol.ServiceCombProtocolAdapter
