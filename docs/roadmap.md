@@ -80,9 +80,9 @@
 |------|------|----------|
 | Spring Cloud | ✅ 已支持 | V1.0 |
 | Dubbo | ✅ 已支持 | V1.0 |
+| gRPC | ✅ 已支持 | V1.0 |
 | SOFAStack | 🔄 计划中 | V1.2 |
 | ServiceComb | 📋 规划中 | V1.5 |
-| gRPC | 🔄 计划中 | V1.3 |
 
 #### 2.2.2 Serverless 平台适配
 
