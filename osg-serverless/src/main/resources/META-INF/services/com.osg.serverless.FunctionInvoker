@@ -1,0 +1,3 @@
+com.osg.serverless.AwsLambdaInvoker
+com.osg.serverless.AliyunFcInvoker
+com.osg.serverless.TencentScfInvoker
