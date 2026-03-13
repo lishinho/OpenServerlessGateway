@@ -49,6 +49,7 @@
         <module>osg-serverless</module>
         <module>osg-mesh</module>
         <module>osg-cloud</module>
+        <module>osg-ai</module>
         <module>osg-server</module>
     </modules>
 
@@ -147,6 +148,11 @@
             <dependency>
                 <groupId>com.osg</groupId>
                 <artifactId>osg-cloud</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.osg</groupId>
+                <artifactId>osg-ai</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
